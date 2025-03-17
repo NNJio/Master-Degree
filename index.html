@@ -4,6 +4,148 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Burger Form</title>
+  </head>
+  <body>
+    <img
+      src="https://i.pinimg.com/736x/9b/71/80/9b7180299366cb6183ae8e185ce891bf.jpg"
+      width="160"
+      height="120"
+    />
+    <hr />
+    <form id="burgerForm">
+      <h1>Create a burger!</h1>
+
+      <section>
+        <label for="patty">What type of protein would you like?</label>
+        <input type="text" name="patty" id="patty" />
+      </section>
+      <hr />
+
+      <section>
+        <label for="amount">How many patties would you like?</label>
+        <input type="number" name="amount" id="amount" />
+      </section>
+      <hr />
+
+      <section>
+        <label for="doneness">How do you want your patty cooked</label>
+        <br />
+        <span>Rare</span>
+        <input
+          type="range"
+          name="doneness"
+          id="doneness"
+          value="3"
+          min="1"
+          max="5"
+        />
+        <span>Well-Done</span>
+      </section>
+      <hr />
+
+      <section>
+        <span>What toppings would you like?</span>
+        <br />
+        <input type="checkbox" name="topping" id="lettuce" value="lettuce" />
+        <label for="lettuce">Lettuce</label>
+        <input type="checkbox" name="topping" id="tomato" value="tomato" />
+        <label for="tomato">Tomato</label>
+        <input type="checkbox" name="topping" id="onion" value="onion" />
+        <label for="onion">Onion</label>
+      </section>
+      <hr />
+
+      <section>
+        <span>Would you like to add cheese?</span>
+        <br />
+        <input type="radio" name="cheese" id="yes" value="yes" />
+        <label for="yes">Yes</label>
+        <input type="radio" name="cheese" id="no" value="no" />
+        <label for="no">No</label>
+      </section>
+      <hr />
+
+      <section>
+        <label for="bun">What type of bun would you like?</label>
+        <select name="bun" id="bun">
+          <option value="sesame">Sesame</option>
+          <option value="potatoe">Potato</option>
+          <option value="pretzel">Pretzel</option>
+        </select>
+      </section>
+      <hr />
+
+      <section>
+        <label for="sauce">What type of sauce would you like?</label>
+        <input list="sauces" id="sauce" name="sauce" />
+        <datalist id="sauces">
+          <option value="ketchup"></option>
+          <option value="mayo"></option>
+          <option value="mustard"></option>
+        </datalist>
+      </section>
+      <hr />
+
+      <section>
+        <label for="extra">Anything else you want to add?</label>
+        <br />
+        <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+      </section>
+      <hr />
+
+      <section>
+        <input type="submit" value="Submit" />
+      </section>
+    </form>
+
+    <script>
+      const form = document.getElementById("burgerForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const patty = document.getElementById("patty").value;
+        const amount = document.getElementById("amount").value;
+        const doneness = document.getElementById("doneness").value;
+
+        const toppings = [];
+        document
+          .querySelectorAll('input[name="topping"]:checked')
+          .forEach((el) => {
+            toppings.push(el.value);
+          });
+
+        const cheese =
+          document.querySelector('input[name="cheese"]:checked')?.value ||
+          "None";
+
+        const bun = document.getElementById("bun").value;
+        const sauce = document.getElementById("sauce").value;
+        const extra = document.getElementById("extra").value;
+
+        const summary = `
+🍔 Your Burger Order:
+- Protein: ${patty}
+- Number of Patties: ${amount}
+- Doneness Level: ${doneness}
+- Toppings: ${toppings.join(", ") || "None"}
+- Cheese: ${cheese}
+- Bun Type: ${bun}
+- Sauce: ${sauce}
+- Extra Notes: ${extra || "None"}
+      `;
+
+        alert(summary);
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Form</title>
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -12,4 +154,4 @@
 
     <script src="/js/script.js"></script>
   </body>
-</html>
+</html> -->
