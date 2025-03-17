@@ -26,7 +26,7 @@
         <input type="checkbox" name="termAndCondition" id="termAndCondition" />
         <label for="termAndCondition">Term and Condition</label>
       </p>
-      <p>
+   <p> 
         <input type="radio" name="size" value="s" id="sizeS" /><label
           for="sizeS"
           >S</label
@@ -43,15 +43,16 @@
           for="sizeL"
           >L</label
         >
-      </p>
-      <p>
-        <label for="chooseSize">Choose Size</label>
-        <select name="size" id="chooseSize">
-          <option value="s">S</option>
-          <option value="m">M</option>
-          <option value="l">L</option>
-        </select>
-      </p> -->
+      </p>  
+    <p>
+      <label for="chooseSize">Choose Size</label>
+      <select name="size" id="chooseSize">
+        <option value="s">S</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+      </select>
+    </p>
+    -->
     <!-- <p>
         <input type="range" id="level" name="level" min="1" max="20" />
         <label for="level">Level</label>
@@ -64,7 +65,7 @@
 
     <!-- <input type="submit" />
     </form> -->
-    <form action="">
+    <!-- <form action="">
       <h1>Validation Form</h1>
       <p>
         <label for="name">Name</label>
@@ -84,6 +85,52 @@
         <label for="email">Email</label>
         <input type="email" id="email" name="email" required /><br />
       </p>
+      <button>Submit</button>
+    </form> -->
+    <h1>Race Register Form</h1>
+    <form action="">
+      <p>
+        <label for="fName">FirstName</label>
+        <input type="text" id="fName" name="name" required />
+        <label for="lName">LastName</label>
+        <input type="text" id="lName" name="lastName" required />
+      </p>
+      <p>
+        <label for="race">Select a race</label>
+        <input type="radio" name="raceType" value="fun" id="fun" /><label
+          for="fun"
+          >Fun Run</label
+        >
+        <input type="radio" name="raceType" value="half" id="half" /><label
+          for="half"
+          >Half Marathon</label
+        >
+        <input type="radio" name="raceType" value="full" id="full" /><label
+          for="full"
+          >Full Marathon</label
+        >
+      </p>
+      <p>
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="10"
+        />
+      </p>
+      <p>
+        <label for="group">Group</label>
+        <select name="group" id="group">
+          <option value="a">A</option>
+          <option value="b">B</option>
+          <option value="d">D</option>
+        </select>
+      </p>
+
       <button>Submit</button>
     </form>
   </body>
