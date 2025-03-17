@@ -10,12 +10,50 @@
   <body>
     <h1><Search></Search></h1>
     <form action="/testForm"></form>
-    <form action="https://www.google.com/search?">
+    <!-- <form action="https://www.google.com/search?">
       <p>
         <label for="search">Search</label>
         <input type="text" id="search" name="q" placeholder="Type for search" />
         <input type="submit" />
       </p>
+    </form> -->
+    <form action="">
+      <p>
+        <input type="checkbox" name="argeeConsent" id="argeeConsent" />
+        <label for="argeeConsent">Argee Consent</label>
+      </p>
+      <p>
+        <input type="checkbox" name="termAndCondition" id="termAndCondition" />
+        <label for="termAndCondition">Term and Condition</label>
+      </p>
+      <p>
+        <input type="radio" name="size" value="s" id="sizeS" /><label
+          for="sizeS"
+          >S</label
+        >
+      </p>
+      <p>
+        <input type="radio" name="size" value="m" id="sizeM" /><label
+          for="sizeM"
+          >M</label
+        >
+      </p>
+      <p>
+        <input type="radio" name="size" value="l" id="sizeL" /><label
+          for="sizeL"
+          >L</label
+        >
+      </p>
+      <p>
+        <label for="chooseSize">Choose Size</label>
+        <select name="size" id="chooseSize">
+          <option value="s">S</option>
+          <option value="m">M</option>
+          <option value="l">L</option>
+        </select>
+      </p>
+
+      <input type="submit" />
     </form>
   </body>
 </html>
