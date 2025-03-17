@@ -8,8 +8,8 @@
   </head>
 
   <body>
-    <h1><Search></Search></h1>
-    <form action="/testForm"></form>
+    <!-- <h1><Search></Search></h1> -->
+    <!-- <form action="/testForm"></form> -->
     <!-- <form action="https://www.google.com/search?">
       <p>
         <label for="search">Search</label>
@@ -17,8 +17,8 @@
         <input type="submit" />
       </p>
     </form> -->
-    <form action="">
-      <!-- <p>
+    <!-- <form action=""> -->
+    <!-- <p>
         <input type="checkbox" name="argeeConsent" id="argeeConsent" />
         <label for="argeeConsent">Argee Consent</label>
       </p>
@@ -52,7 +52,7 @@
           <option value="l">L</option>
         </select>
       </p> -->
-      <p>
+    <!-- <p>
         <input type="range" id="level" name="level" min="1" max="20" />
         <label for="level">Level</label>
       </p>
@@ -60,9 +60,31 @@
       <p>
         <label for="story">Story</label> <br />
         <textarea name="story" id="story" cols="10" rows="3"></textarea>
-      </p>
+      </p> -->
 
-      <input type="submit" />
+    <!-- <input type="submit" />
+    </form> -->
+    <form action="">
+      <h1>Validation Form</h1>
+      <p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required minlength="5" /><br />
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="10"
+        /><br />
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required /><br />
+      </p>
+      <button>Submit</button>
     </form>
   </body>
 </html>
