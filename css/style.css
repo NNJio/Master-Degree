@@ -1,6 +1,10 @@
-#title {
+/* #title {
   color: blue;
 }
 .sub-title-class {
   color: pink;
+} */
+
+* {
+  color: rgb(182, 71, 71);
 }
