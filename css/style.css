@@ -1,23 +1,9 @@
-/* #title {
-  color: blue;
+h2::first-letter {
+  font-size: 200px;
 }
-.sub-title-class {
-  color: pink;
-} */
-
-/* * {
-  color: white;
-  background-color: rgb(204, 196, 196);
-} */
-
-button:hover {
-  background-color: aquamarine;
-  color: white;
+p::first-line {
+  background-color: coral;
 }
-button:active {
-  background-color: red;
-  color: black;
-}
-p:nth-last-of-type(1) {
-  color: red;
+h2::selection {
+  background-color: aqua;
 }
