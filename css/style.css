@@ -1,27 +1,6 @@
-/* h2::first-letter {
-  font-size: 20px;
-}
-p::first-line {
-  background-color: coral;
-}
-h2::selection {
-  background-color: aqua;
-} */
-
-/* div h1 {
-  color: aquamarine;
-}
-.test span {
-  color: aqua;
-} */
-/* div > p > span {
-  color: blue;
-} */
-
-div + h1 {
-  color: aquamarine;
-}
-
-h2 + p {
-  color: red;
+p {
+  text-align: justify;
+  text-decoration: underline red;
+  letter-spacing: 0.5px;
+  line-height: 15px;
 }
