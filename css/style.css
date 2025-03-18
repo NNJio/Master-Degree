@@ -1,84 +1,56 @@
-/* body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #faebd7;
-  color: #333333;
-  margin: 0;
-  padding: 20px;
-  text-align: center;
+nav ul {
+  list-style: none;
+  padding-left: 50px;
 }
 
-img {
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-h1 {
-  color: #8b4513;
-  margin-bottom: 20px;
-}
-
-section {
-  background: rgba(255, 255, 255, 0.8);
-  margin: 10px auto;
-  padding: 15px;
-  border-radius: 8px;
-  max-width: 500px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  text-align: left;
-}
-
-input[type="text"],
-input[type="number"],
-input[type="range"],
-input[type="submit"],
-select,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 2px solid #8b4513;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 1em;
-}
-
-input[type="submit"] {
-  background-color: #ffd700;
-  color: #8b4513;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-input[type="submit"]:hover {
-  background-color: #ffc300;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
+nav ul li {
+  display: inline;
   margin-right: 10px;
-  transform: scale(1.2);
 }
 
-section span {
-  font-weight: bold;
-  margin: 0 10px;
+nav ul li:not(:last-child)::after {
+  content: "|";
+  margin-left: 10px;
+  color: black;
 }
 
-hr {
+nav ul li a {
+  text-decoration: underline;
+  color: blue;
+}
+
+#gallery img {
+  width: 314px;
+  height: 210px;
+  margin: 0px 10px;
+  border: 5px solid #f8d210;
+  outline-offset: 5px;
+  box-shadow: 5px 0 0 #f51720;
+}
+
+#gallery img:hover {
+  border-color: #2ff3e0;
+}
+
+#register-form {
+  margin-top: 20px;
+  border-top: 5px solid #4c5270;
+  width: 400px;
+}
+
+#register-form input,
+#register-form button {
+  display: block;
+  width: 400px;
+  height: 30px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+#register-form button {
+  background-color: steelblue;
+  color: white;
   border: none;
-  height: 1px;
-  background: #8b4513;
-  opacity: 0.2;
-  margin: 20px auto;
-  width: 80%;
-} */
+  font-weight: bold;
+  cursor: pointer;
+}
