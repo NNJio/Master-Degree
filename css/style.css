@@ -1,12 +1,6 @@
-h1 {
-  color: rgb(176, 186, 31);
-  font-size: 100px;
+#title {
+  color: blue;
 }
-#greeting {
-  color: brown;
-  font-size: 100px;
-}
-.goodbye-class {
-  color: greenyellow;
-  font-size: 100px;
+.sub-title-class {
+  color: pink;
 }
