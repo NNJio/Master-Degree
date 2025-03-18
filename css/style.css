@@ -5,6 +5,19 @@
   color: pink;
 } */
 
-* {
-  color: rgb(182, 71, 71);
+/* * {
+  color: white;
+  background-color: rgb(204, 196, 196);
+} */
+
+button:hover {
+  background-color: aquamarine;
+  color: white;
+}
+button:active {
+  background-color: red;
+  color: black;
+}
+p:nth-last-of-type(1) {
+  color: red;
 }
