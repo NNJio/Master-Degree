@@ -1,7 +1,16 @@
-.box1 {
-  width: 100px;
-  height: 100px;
+div {
+  /* width: 100px; */
+  height: 20px;
   background-color: aquamarine;
-  border: 3px solid black;
-  padding: 100px;
+  border: 2px solid black;
+  /* padding: 100px; */
+  display: inline;
+}
+span {
+  width: 20px;
+  height: 20px;
+  background-color: aquamarine;
+  border: 1px solid black;
+  margin: 10px;
+  display: inline-block;
 }
